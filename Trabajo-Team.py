@@ -98,9 +98,22 @@ else:
 # ---------------------------------
 
 
-# 15. Maximiliano
+# 15. Maximiliano Reinoso
 # ---------------------------------
-# Escribí tu código acá
+x = None 
+print(x)
+#Al ejecutar imprime "None"
+#None es un "valor" que se le asigna a una variable, este valor esta vacio, no tiene nada y por ende si ejecutamos en vez de dar 0 dice none
+#Sirve para inicializar variables antes de asignarle un valor real como en el ejemplo a comtinuacion
+
+#Inicializo variable
+num = None
+
+#Ingreso valor
+num = int(input("Ingrese su edad: "))
+
+#Muestro numero
+print(num)
 # ---------------------------------
 
 
