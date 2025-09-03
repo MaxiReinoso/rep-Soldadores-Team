@@ -27,9 +27,11 @@
 # ---------------------------------
 
 
-# 5. Maximiliano
+# 5. Maximiliano Reinoso
 # ---------------------------------
-# Escribí tu código acá
+oracion = input("Ingrese una oración: ")
+
+print (oracion.replace(" ",""))
 # ---------------------------------
 
 
