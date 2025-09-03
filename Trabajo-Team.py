@@ -59,9 +59,18 @@ print (oracion.replace(" ",""))
 # ---------------------------------
 
 
-# 10. Maximiliano
+# 10. Maximiliano Reinoso
 # ---------------------------------
-# Escribí tu código acá
+oracion = input("Ingrese una oración: ")
+print("Elija a que quiere convertir el texto")
+opcion = int(input("1)Mayusculas 2)Minusculas: "))
+
+if opcion == 1:
+    print(oracion.upper())
+elif opcion ==2:
+    print(oracion.lower())
+else:
+    print("Elija un numero entre las opciones")
 # ---------------------------------
 
 
