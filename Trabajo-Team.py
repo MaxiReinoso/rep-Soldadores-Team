@@ -141,7 +141,56 @@ print(num)
 # ---------------------------------
 
 
-# 20. Maximiliano (cagaste)
+# 20. Maximiliano Reinoso
 # ---------------------------------
-# Escribí tu código acá
+#Fracción
+class fraccion:
+    def __init__(self, numerador, denominador):
+        self.numerador = numerador
+        self.denominador = denominador
+
+    def __str__(self):
+        return f"{self.numerador}/{self.denominador}"
+    
+    def sumar(self, f2):
+        num= self.numerador * f2.denominador + f2.numerador * self.denominador
+        den= self.denominador * f2.denominador
+        return fraccion(num, den)
+    
+    def resta(self, f2):
+        num= self.numerador * f2.denominador - f2.numerador * self.denominador
+        den= self.denominador * f2.denominador
+        return fraccion(num, den)
+    
+    def multiplicar(self, f2):
+        num= self.numerador * f2.numerador
+        den = self.denominador * f2.denominador
+        return fraccion(num, den)
+    
+    def dividir(self, f2):
+        num= self.numerador * f2.denominador
+        den= self. denominador * f2.numerador
+        return fraccion(num, den)
+    
+#Codigo principal
+
+#fraccion 1
+num1 = int(input("Ingrese el numerador de la primera fracción: "))
+den1 = int(input("Ingrese el denominador de la primera fracción: "))
+#fraccion 2
+num2 = int(input("Ingrese el numerador de la segunda fracción: "))
+den2 = int(input("Ingrese el denominador de la segunda fracción: "))
+
+f1 = fraccion(num1, den1)
+f2 = fraccion(num2, den2)
+
+suma= f1.sumar(f2)
+resta= f1.resta(f2)
+multiplicacion= f1.multiplicar(f2)
+division= f1.dividir(f2)
+
+print(f"La suma de ambas fracciones es: {suma}")
+print(f"La resta de ambas fracciones es: {resta}")
+print(f"La multiplicacion de ambas fracciones es: {multiplicacion}")
+print(f"La division de ambas fracciones es: {division}")
 # ---------------------------------
